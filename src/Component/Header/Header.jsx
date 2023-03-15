@@ -4,7 +4,7 @@ import iconCar from "../../assets/img/icon-carrinho.svg";
 
 const Header = () => {
   return (
-    <div className="header">
+    <header className="header">
       <img src={logo} alt="Logo DNC" />
       <div className="header__nav">
         <ul>
@@ -24,7 +24,7 @@ const Header = () => {
           <img src={iconCar} alt="icon carrinho" />
         </a>
       </div>
-    </div>
+    </header>
   );
 };
 
