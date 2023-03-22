@@ -1,14 +1,16 @@
-import React from 'react'
 import "./index.scss";
-import img from "../../../public/burguer.svg"
 
-const Card = () => {
+
+const Card = ({data}) => {
+  console.log(data)
   return (
     <div className="card">
-      <img src={img} alt="Imagem do card" />
+      <img src={data.imgPath} alt="Imagem do card" />
       <div className="card-body">
-        <h5 className="card-title">Título do Card</h5>
-        <button className="btn btn-primary">Adicionar</button>
+        <h5 className="card-title">{data.title}</h5>
+        <button className="btn btn-primary">
+          Adicionar
+        </button>
       </div>
     </div>
   );

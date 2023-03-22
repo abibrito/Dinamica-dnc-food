@@ -1,12 +1,13 @@
 .card {
-  justify-content: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    display: grid;
+    flex-direction: column;
     width: 330px;
     border: 1px solid #E39F0B;
     border-radius: 8px;
     padding: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .card img {
@@ -17,9 +18,10 @@
 
 .card-body {
   padding: 10px;
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .card-title {
@@ -33,7 +35,8 @@
   background: #E39F0B;
   color: #fff;
   border: none;
-  padding: 4px 36px;
+  width: 130px;
+  height: 25px;
   margin-bottom: 10px;
   border-radius: 3px;
   cursor: pointer;

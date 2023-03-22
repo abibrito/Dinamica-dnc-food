@@ -2,22 +2,17 @@ import Header from "../../Component/Header/Header";
 import Card from "../../Component/Card-Produto/Card";
 import "./index.scss";
 
-const Home = () => {
+const Home = ({ data }) => {
+  console.log(data);
   return (
     <div>
       <Header />
       <div className="Display-card">
-        <Card />
-        <Card />
-        <Card />
+        {data.map((food) => (
+          <Card key={food.id} data={food} />
+        ))}
       </div>
-      <div className="Display-card">
-        <Card />
-        <Card />
-        <Card />
-      </div>
-      <div className="Footer">
-      </div>
+      <div className="Footer"></div>
     </div>
   );
 };
